@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Afiliación</title>
+  </head>
+  <body>
+    <h1>VENI AL GYM</h1>
+
+    <form>
+      <fieldset>
+        <h2>Datos personales</h2>
+
+        <label for="lbl-nombre">Nombre:*</label>
+        <input type="text" name="nombre" id="lbl-nombre" required />
+        <br />
+
+        <label for="lbl-apellido">Apellido:*</label>
+        <input type="text" name="apellido" id="lbl-apellido" required />
+        <br />
+
+        <label for="lbl-documento">Documento:*</label>
+        <input type="text" name="documento" id="lbl-documento" required />
+        <br />
+
+        <label for="lbl-nacionalidad">Nacionalidad:*</label>
+        <select name="valor-opcion" id="lbl-nacionalidad" required>
+          <option value="" hidden selected disabled>- Seleccionar -</option>
+          <option value="argentina">argentina</option>
+          <option value="brasilera">brasilera</option>
+          <option value="chileno">chileno</option>
+          <option value="estadounidense">estadounidense</option>
+          <option value="otro">otro</option>
+        </select>
+        <br />
+        <label for="lbl-descripcion">Contanos un poco de vos...</label>
+        <textarea
+          name="lbl-descripcion"
+          id="lbl-descripcion"
+          cols="20"
+          rows="1"
+        ></textarea>
+        <br />
+        <label>Sexo:*</label>
+        <div>
+          <label for="femenino">Femenino</label>
+          <input
+            type="radio"
+            id="femenino"
+            name="sexo"
+            value="femenino"
+            required
+          />
+          <label for="masculino">Masculino</label>
+          <input
+            type="radio"
+            id="masculino"
+            name="sexo"
+            value="masculino"
+            required
+          />
+          <label for="otro">Otro</label>
+          <input type="radio" id="otro" name="sexo" value="otro" required />
+        </div>
+      </fieldset>
+
+      <div class="separador"></div>
+
+      <fieldset>
+        <h2>Datos de contacto</h2>
+
+        <label for="lbl-telefono">Teléfono</label>
+        <input
+          type="text"
+          name="telefono"
+          id="lbl-telefono"
+          placeholder="Código de area y número"
+          class="telefono"
+        />
+        <br />
+        <label for="lbl-email">Dirección de correo electrónico</label>
+        <input
+          type="email"
+          name="email"
+          id="lbl-email"
+          placeholder="Ej: mail@gmail.com"
+        />
+      </fieldset>
+
+      <div class="separador"></div>
+
+      <fieldset class="Actividades">
+        <h2>Actividades</h2>
+
+        <p>Por favor, indicá cuáles actividaes te interesan.</p>
+        <h3>Sede Palermo:</h3>
+        <div>
+          <label for="Básquet">Básquet</label>
+          <input
+            type="checkbox"
+            id="Básquet"
+            name="actividades-1"
+            value="Básquet"
+          />
+          <label for="Boxeo">Boxeo</label>
+          <input
+            type="checkbox"
+            id="Boxeo"
+            name="actividades-2"
+            value="Boxeo"
+          />
+          <label for="Fútbol">Fútbol</label>
+          <input
+            type="checkbox"
+            id="Fútbol"
+            name="actividades-3"
+            value="Fútbol"
+          />
+          <label for="Tenis">Tenis</label>
+          <input
+            type="checkbox"
+            id="Tenis"
+            name="actividades-4"
+            value="Tenis"
+          />
+        </div>
+        <h3>Sede Rosario:</h3>
+        <div>
+          <label for="Básquet">Básquet</label>
+          <input
+            type="checkbox"
+            id="Básquet"
+            name="actividades-1"
+            value="Básquet"
+          />
+          <label for="Fútbol">Fútbol</label>
+          <input
+            type="checkbox"
+            id="Fútbol"
+            name="actividades-3"
+            value="Fútbol"
+          />
+          <label for="Rugby">Rugby</label>
+          <input
+            type="checkbox"
+            id="Rugby"
+            name="actividades-2"
+            value="Rugby"
+          />
+          <label for="Voley">Voley</label>
+          <input
+            type="checkbox"
+            id="Voley"
+            name="actividades-4"
+            value="Voley"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <label for="Condiciones" class="piepagina"
+          >Acepto las condiciones*</label
+        >
+        <input
+          type="checkbox"
+          id="Condiciones"
+          name="condiciones"
+          value="Condiciones"
+          required
+        />
+
+        <br />
+        <label for="Novedades" class="piepagina">Deseo recibir novedades</label>
+        <input
+          type="checkbox"
+          id="Novedades"
+          name="novedades"
+          value="Novedades"
+        />
+
+        <p class="piepagina"><strong> *: campo obligatorio</strong></p>
+
+        <div class="botones">
+          <button class="boton">iniciar afiliación</button>
+          <input type="reset" class="boton" />
+        </div>
+      </fieldset>
+    </form>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

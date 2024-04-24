@@ -1,0 +1,207 @@
+@font-face {
+  font-family: urbandecay;
+  src: url(public/fonts/Snikers.ttf);
+}
+@font-face {
+  font-family: streetrats;
+  src: url(public/fonts/Street_Rats.ttf);
+}
+
+/* 
+Paleta de colores:
+#f0c808 Amarillo intenso
+#1f2023 negro profundo
+#5c5d67 gris claro
+#00cc66 verde lima
+#0d1b1e negro
+#ffe787 amarillo claro
+*/
+body {
+  background-color: #1f2023;
+  background-image: url(/public/img/360_F_58819731_fGTowGhMmHx4AdDdGA4AoZB03vjSh2lD.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: streetrats, sans-serif;
+  transition: all 0.2s ease-in;
+}
+
+h1 {
+  font-family: urbandecay, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 80px;
+  letter-spacing: 10px;
+  color: #f0c808;
+}
+
+form {
+  width: 40%;
+}
+
+fieldset {
+  background-color: #5c5d67;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid #f0c808;
+  border-radius: 80px;
+  margin-bottom: 30px;
+  transition: all 0.2s ease-in;
+  color: #00cc66;
+}
+
+fieldset:focus-within {
+  background-color: #0d1b1e;
+  color: white;
+  border: 3px solid white;
+}
+
+h2 {
+  background-color: #f0c808;
+  font-family: urbandecay, sans-serif;
+  padding: 15px;
+  border-radius: 35px;
+  letter-spacing: 5px;
+  color: black;
+  width: 70%;
+  text-align: center;
+}
+
+input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #f0c808;
+}
+
+input[type="text"] {
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 30px;
+  width: 70%;
+  border: 1px solid#f0c808;
+  border-radius: 20px;
+  outline: 0px solid black;
+}
+
+input[type="email"] {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #f0c808;
+  height: 35px;
+  width: 70%;
+  border: 1px solid#f0c808;
+  border-radius: 25px;
+  outline: 0px solid black;
+}
+
+input[type="email"]:focus {
+  width: 85%;
+  height: 50px;
+}
+
+input[type="text"]:focus {
+  width: 85%;
+  height: 50px;
+}
+
+input:focus {
+  background-color: #ffe787;
+  outline: 0px solid black;
+}
+
+input[name="sexo"] {
+  width: 85%;
+  height: 50px;
+}
+
+input[name="sexo"] {
+  width: 85%;
+  height: 50px;
+}
+
+input[name="sexo"] {
+  width: 85%;
+  height: 50px;
+}
+
+select {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #f0c808;
+  height: 35px;
+  width: 70%;
+  border: 1px solid#f0c808;
+  border-radius: 25px;
+  outline: 0px solid black;
+}
+
+select:focus {
+  background-color: #ffe787;
+}
+
+textarea {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: auto;
+  width: 60%;
+  resize: none;
+  background-color: #f0c808;
+  border-radius: 50px;
+  border: 0px;
+  padding: 5%;
+  outline: 0px solid black;
+}
+
+label {
+  letter-spacing: 5px;
+}
+
+textarea:focus {
+  background-color: #ffe787;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+p {
+  font-weight: 900;
+  font-family: streetrats, sans-serif;
+}
+
+.piepagina {
+  color: white;
+}
+
+.actividades {
+  align-self: center;
+}
+
+.separador {
+  height: 290px;
+  width: 800px;
+  background-image: url(public/img/separador.png);
+  background-size: 400px;
+  align-self: center;
+}
+
+.botones {
+  text-align: center;
+}
+
+.boton {
+  background-color: #5c5d67;
+  color: #00cc66;
+  border: 3px solid #f0c808;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  font-family: streetrats, sans-serif;
+}
+
+.boton:hover {
+  border: 3px solid white;
+  background-color: black;
+  color: white;
+}
